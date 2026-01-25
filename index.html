@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー - パシャパシャ</title>
+    <title>Privacy Policy - Pasha Pasha</title>
     <style>
         :root {
             --primary-color: #2563eb;
@@ -11,56 +12,44 @@
             --text-color: #1e293b;
             --border-color: #e2e8f0;
         }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: var(--bg-color);
             color: var(--text-color);
             line-height: 1.8;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
         }
-        .lang-switcher {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-        .lang-switcher button {
-            padding: 8px 16px;
-            margin-left: 8px;
-            border: 1px solid var(--primary-color);
-            background: white;
-            color: var(--primary-color);
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .lang-switcher button:hover,
-        .lang-switcher button.active {
-            background: var(--primary-color);
-            color: white;
-        }
+
         header {
             text-align: center;
             margin-bottom: 40px;
             padding-bottom: 20px;
             border-bottom: 2px solid var(--border-color);
         }
+
         h1 {
             font-size: 2rem;
             margin-bottom: 10px;
             color: var(--primary-color);
         }
+
         .app-name {
             font-size: 1.2rem;
             color: #64748b;
         }
+
         h2 {
             font-size: 1.3rem;
             margin: 30px 0 15px;
@@ -68,19 +57,24 @@
             border-bottom: 1px solid var(--border-color);
             color: var(--primary-color);
         }
-        p, li {
+
+        p,
+        li {
             margin-bottom: 12px;
         }
+
         ul {
             padding-left: 24px;
         }
+
         .section {
             background: white;
             padding: 25px;
             border-radius: 12px;
             margin-bottom: 20px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
         }
+
         .update-date {
             text-align: center;
             color: #64748b;
@@ -88,152 +82,81 @@
             padding-top: 20px;
             border-top: 1px solid var(--border-color);
         }
-        .content { display: none; }
-        .content.active { display: block; }
+
+        a {
+            color: var(--primary-color);
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="lang-switcher">
-            <button id="btn-ja" class="active" onclick="switchLang('ja')">日本語</button>
-            <button id="btn-en" onclick="switchLang('en')">English</button>
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="app-name">Pasha Pasha</p>
+        </header>
+
+        <div class="section">
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy explains how "Pasha Pasha" (hereinafter "the App") handles personal information. By
+                using the App, you agree to this policy.</p>
         </div>
 
-        <!-- 日本語版 -->
-        <div id="content-ja" class="content active">
-            <header>
-                <h1>プライバシーポリシー</h1>
-                <p class="app-name">パシャパシャ</p>
-            </header>
+        <div class="section">
+            <h2>2. Information We Collect</h2>
+            <h3>2.1 Camera Access</h3>
+            <p>The App requires access to your device's camera to provide photo-taking functionality. Photos taken with
+                the camera are processed only on your device and are not transmitted to external servers.</p>
 
-            <div class="section">
-                <h2>1. はじめに</h2>
-                <p>本プライバシーポリシーは、「パシャパシャ」（以下「本アプリ」）における個人情報の取り扱いについて説明します。本アプリをご利用いただくことで、本ポリシーに同意したものとみなされます。</p>
-            </div>
-
-            <div class="section">
-                <h2>2. 収集する情報</h2>
-                <h3>2.1 カメラへのアクセス</h3>
-                <p>本アプリは、写真撮影機能を提供するためにデバイスのカメラへのアクセスを必要とします。カメラで撮影された写真は、お使いのデバイス上でのみ処理され、外部サーバーに送信されることはありません。</p>
-                
-                <h3>2.2 ストレージへのアクセス</h3>
-                <p>撮影した写真や作成したスライドショー動画を保存・共有するため、デバイスのストレージへのアクセスが必要です。</p>
-            </div>
-
-            <div class="section">
-                <h2>3. 情報の利用目的</h2>
-                <p>収集した情報は以下の目的でのみ使用されます：</p>
-                <ul>
-                    <li>写真の撮影と保存</li>
-                    <li>スライドショー動画の作成と保存</li>
-                    <li>SNSへの共有機能の提供</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>4. 第三者への情報提供</h2>
-                <p>本アプリは、ユーザーの個人情報を第三者に販売、取引、またはレンタルすることはありません。ただし、以下のサービスを利用しています：</p>
-                <ul>
-                    <li><strong>Google AdMob</strong>: 広告配信のために使用されます。AdMobは広告のパーソナライズのためにデバイス情報を収集する場合があります。詳細は<a href="https://policies.google.com/privacy" target="_blank">Googleプライバシーポリシー</a>をご確認ください。</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>5. データの保護</h2>
-                <p>本アプリで作成されたコンテンツ（写真、動画）はすべてお使いのデバイス上にローカル保存されます。外部サーバーへのアップロードや同期は行われません。</p>
-            </div>
-
-            <div class="section">
-                <h2>6. お子様のプライバシー</h2>
-                <p>本アプリは13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
-            </div>
-
-            <div class="section">
-                <h2>7. ポリシーの変更</h2>
-                <p>本プライバシーポリシーは、必要に応じて更新される場合があります。変更があった場合は、本ページにて通知いたします。</p>
-            </div>
-
-            <div class="section">
-                <h2>8. お問い合わせ</h2>
-                <p>本プライバシーポリシーに関するご質問がございましたら、アプリ内の設定画面からお問い合わせください。</p>
-            </div>
-
-            <p class="update-date">最終更新日: 2026年1月25日</p>
+            <h3>2.2 Storage Access</h3>
+            <p>Access to device storage is required to save and share photos and slideshow videos you create.</p>
         </div>
 
-        <!-- English Version -->
-        <div id="content-en" class="content">
-            <header>
-                <h1>Privacy Policy</h1>
-                <p class="app-name">PashaPasha</p>
-            </header>
-
-            <div class="section">
-                <h2>1. Introduction</h2>
-                <p>This Privacy Policy explains how "PashaPasha" (hereinafter "the App") handles personal information. By using the App, you agree to this policy.</p>
-            </div>
-
-            <div class="section">
-                <h2>2. Information We Collect</h2>
-                <h3>2.1 Camera Access</h3>
-                <p>The App requires access to your device's camera to provide photo-taking functionality. Photos taken with the camera are processed only on your device and are not transmitted to external servers.</p>
-                
-                <h3>2.2 Storage Access</h3>
-                <p>Access to device storage is required to save and share photos and slideshow videos you create.</p>
-            </div>
-
-            <div class="section">
-                <h2>3. How We Use Information</h2>
-                <p>Collected information is used only for the following purposes:</p>
-                <ul>
-                    <li>Taking and saving photos</li>
-                    <li>Creating and saving slideshow videos</li>
-                    <li>Providing sharing functionality to social media</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>4. Third-Party Disclosure</h2>
-                <p>We do not sell, trade, or rent users' personal information to third parties. However, we use the following services:</p>
-                <ul>
-                    <li><strong>Google AdMob</strong>: Used for ad delivery. AdMob may collect device information for ad personalization. For details, please see <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>5. Data Protection</h2>
-                <p>All content created in the App (photos, videos) is stored locally on your device. No uploads or synchronization to external servers occur.</p>
-            </div>
-
-            <div class="section">
-                <h2>6. Children's Privacy</h2>
-                <p>The App does not intentionally collect personal information from children under 13 years of age.</p>
-            </div>
-
-            <div class="section">
-                <h2>7. Policy Changes</h2>
-                <p>This Privacy Policy may be updated as needed. If changes are made, we will notify you on this page.</p>
-            </div>
-
-            <div class="section">
-                <h2>8. Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy, please contact us through the settings screen in the app.</p>
-            </div>
-
-            <p class="update-date">Last Updated: January 25, 2026</p>
+        <div class="section">
+            <h2>3. How We Use Information</h2>
+            <p>Collected information is used only for the following purposes:</p>
+            <ul>
+                <li>Taking and saving photos</li>
+                <li>Creating and saving slideshow videos</li>
+                <li>Providing sharing functionality to social media</li>
+            </ul>
         </div>
+
+        <div class="section">
+            <h2>4. Third-Party Disclosure</h2>
+            <p>We do not sell, trade, or rent users' personal information to third parties. However, we use the
+                following services:</p>
+            <ul>
+                <li><strong>Google AdMob</strong>: Used for ad delivery. AdMob may collect device information for ad
+                    personalization. For details, please see <a href="https://policies.google.com/privacy"
+                        target="_blank">Google Privacy Policy</a>.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. Data Protection</h2>
+            <p>All content created in the App (photos, videos) is stored locally on your device. No uploads or
+                synchronization to external servers occur.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Children's Privacy</h2>
+            <p>The App does not intentionally collect personal information from children under 13 years of age.</p>
+        </div>
+
+        <div class="section">
+            <h2>7. Policy Changes</h2>
+            <p>This Privacy Policy may be updated as needed. If changes are made, we will notify you on this page.</p>
+        </div>
+
+        <div class="section">
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us through the settings screen in the
+                app.</p>
+        </div>
+
+        <p class="update-date">Last Updated: January 25, 2026</p>
     </div>
-
-    <script>
-        function switchLang(lang) {
-            document.getElementById('content-ja').classList.remove('active');
-            document.getElementById('content-en').classList.remove('active');
-            document.getElementById('btn-ja').classList.remove('active');
-            document.getElementById('btn-en').classList.remove('active');
-            
-            document.getElementById('content-' + lang).classList.add('active');
-            document.getElementById('btn-' + lang).classList.add('active');
-        }
-    </script>
 </body>
+
 </html>
